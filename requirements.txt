@@ -1,0 +1,11 @@
+langchain 
+langchain-community 
+openai 
+tiktoken 
+chromadb 
+docx2txt
+pytesseract 
+pillow 
+pdf2image
+python-docx
+gradio
