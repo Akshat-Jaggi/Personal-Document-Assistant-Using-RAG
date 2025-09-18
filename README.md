@@ -43,6 +43,18 @@ Requirements include: langchain, langchain-community, chromadb, openai, pytesser
 5. RAG + LLM: Retrieves relevant chunks and answers using OpenAI’s GPT, falls back to general LLM answer, if necessary.
 
 ---
+## Data Storage in Datbricks Volume
+
+All the Word Documents are stored in a Databricks Volume and you can copy/paste the path in the notebook and use the code as it is for the same.
+
+<img width="1913" height="1019" alt="image" src="https://github.com/user-attachments/assets/bd394791-beaa-49c9-a2c2-6823a928cb39" />
+
+---
+## Vector Store persistent directory
+
+<img width="1909" height="1015" alt="image" src="https://github.com/user-attachments/assets/ff1acee8-d5d9-4971-bc55-73c86a2ff45f" />
+
+---
 
 ## Data Engineering Aspect 
 This project is not just AI - it demonstarates key data engineering skills as well:
