@@ -2,7 +2,6 @@
 
 An AI-powered document helper that allows you to ask questions on Word documents containing text and images. It uses **Retrieval-Augmented Generation (RAG)** to find relevant information in your documents and falls back to OpenAI's language model if the answer is not found.
 
----
 
 ## Features
 
@@ -15,8 +14,6 @@ An AI-powered document helper that allows you to ask questions on Word documents
 
 <img width="1340" height="865" alt="image" src="https://github.com/user-attachments/assets/1512a48b-b967-4ace-858e-9e743a5cbf4f" />
 
----
-
 ## Installation
 
 ```bash
@@ -25,7 +22,6 @@ pip install -r requirements.txt
 
 Requirements include: langchain, langchain-community, chromadb, openai, pytesseract, python-docx, Pillow, tiktoken, graio (optional)
 
----
 
 ## Usage
 1. Place your Word documents in the documents/ folder
@@ -33,7 +29,6 @@ Requirements include: langchain, langchain-community, chromadb, openai, pytesser
 3. Use the interactive input loop in the last cell to ask questions.
 4. Enjoy answers grounded in your uploads. In case the answer is not there in the documents, it uses general LLM to predict an answer for you after stating it is not coming directly from the documents.
 
----
 
 ## How it Works
 1. Document Ingestion: Reads text and images from the Word docs
@@ -42,19 +37,16 @@ Requirements include: langchain, langchain-community, chromadb, openai, pytesser
 4. Vector Store: Stores embeddings in Chroma for semantic search. Stores it in a presistent directory so that the Chroma Store can be re-used in a new notebook.
 5. RAG + LLM: Retrieves relevant chunks and answers using OpenAI’s GPT, falls back to general LLM answer, if necessary.
 
----
 ## Data Storage in Datbricks Volume
 
 All the Word Documents are stored in a Databricks Volume and you can copy/paste the path in the notebook and use the code as it is for the same.
 
 <img width="1913" height="1019" alt="image" src="https://github.com/user-attachments/assets/bd394791-beaa-49c9-a2c2-6823a928cb39" />
 
----
 ## Vector Store persistent directory
 
 <img width="1909" height="1015" alt="image" src="https://github.com/user-attachments/assets/ff1acee8-d5d9-4971-bc55-73c86a2ff45f" />
 
----
 
 ## Data Engineering Aspect 
 This project is not just AI - it demonstarates key data engineering skills as well:
@@ -63,7 +55,6 @@ This project is not just AI - it demonstarates key data engineering skills as we
 - Data Storage & retrieval: Persistent Vectore Store with Chroma, for re-usabiltiy and removing the need to convert the document into embeddings every run.
 - Efficient Querying: Use of semantic Search to effectively query over document collections.
 
----
 
 ## Optional Enhancements that can be taken up in this
 - Multi-format document ingestion (PDF, Markdown, CSV)
