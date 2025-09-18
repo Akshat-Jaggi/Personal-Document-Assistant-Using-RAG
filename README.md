@@ -13,6 +13,8 @@ An AI-powered document helper that allows you to ask questions on Word documents
 - **Interactive Notebook Interface** for testing queries
 - **Persistent vector store** for large input documents
 
+<img width="1340" height="865" alt="image" src="https://github.com/user-attachments/assets/1512a48b-b967-4ace-858e-9e743a5cbf4f" />
+
 ---
 
 ## Installation
